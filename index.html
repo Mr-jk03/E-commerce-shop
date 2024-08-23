@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row"> 
+            <nav class="row head">
+                <div class="col l-2 logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="col l-6 menu">
+                    <ul class="ul-menu">
+                        <li class="li-menu">Giá Ưu Đãi
+                            <ul class="ul-gud">
+                                <li>79K</li>
+                                <li>99K-119K</li>
+                                <li>149K-159K</li>
+                            </ul>
+                        </li>
+                        <li class="li-menu">Giày Nữ
+                            <ul class="ul-gud">
+                                <li>Giày cao gót</li>
+                                <li>Giày thể thao</li>
+                                <li>SANDAL Nữ</li>
+                            </ul>
+                        </li>
+                        <li class="li-menu">Giày Nam
+                            <ul class="ul-gud">
+                                <li>Giày thể thao nam</li>
+                                <li>Dép nam</li>
+                                <li>SANDAL Nam</li>
+                            </ul>
+                        </li>
+                        <li class="li-menu">Giày cặp</li>
+                        <li class="li-menu">Balo-Túi</li>
+                        <li class="li-menu">Sale 50%</li>
+                        <li class="li-menu">Sản phẩm bán chạy</li>
+                        <li class="li-menu">Phụ kiện</li>
+                    </ul>
+                </div>
+                <div class="col l-2 search">
+                    <input type="text">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="col l-2">
+                    <div class="icon">
+                        <i class='bx bxs-user-circle'></i>
+                        <i class='bx bxs-bell-ring'></i>
+                        <i class='bx bx-search' id="icon-search" onclick="showSearch()"></i>
+                    </div>
+                </div>
+            </nav>
+            <!--search-mobile-->
+            <div class="grid wide cha-search" >
+                <div class="search-mobile" id="search-input-mb">
+                    <div class="row">
+                        <div class="col l-9">
+                            <div class="search-input">
+                                <input type="text" name="" id="" placeholder="Tìm kiếm...">
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <button class="x-icon" id="x-icon" onclick="closeSearch()">
+                                <i class='bx bx-x'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--search-mobile-->
+            <div class="grid wide">
+                <div class="row category-info">
+                    <div class="col l-4 category-name">
+                        <span>FLASH SALE</span>
+                    </div>
+                    <div class="col l-8">
+                        <div class="category-xx">
+                            <label for="check-filter" class="col l-4 c-6 filter">
+                                <i class='bx bx-menu-alt-left'></i>
+                                <span>Bộ Lọc</span>
+                            </label>
+                            <div class="col l-4 c-6 arrange">
+                                <span>Sắp xếp </span>
+                                <select name="" id="" class="">
+                                    <option value="" selected>Tùy chọn</option>
+                                    <option value="">Từ thấp đến cao</option>
+                                    <option value="">Từ cao đến thấp</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--menu filter-->
+            <input type="checkbox" id="check-filter" class="check-filter">
+            <label for="check-filter" class="ovl-filter"></label>
+            <label for="check-filter" class="menu-filter">
+                <div class="filter-bl">BỘ LỌC</div>
+                <div class="filter-name">
+                    <span>Màu Sắc</span>
+                </div>
+                <div class="color-list">
+                    <div class="row">
+                        <div class="col l-3 c-3">
+                            <input type="checkbox">
+                            <span>Bạc</span>
+                        </div>
+                        <div class="col l-3 c-3">
+                            <input type="checkbox">
+                            <span>Đen</span>
+                        </div>
+                        <div class="col l-3 c-3">
+                            <input type="checkbox">
+                            <span>Trắng</span>
+                        </div>
+                        <div class="col l-3 c-3">
+                            <input type="checkbox">
+                            <span>Xanh</span>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <!--menu filer-->
+            <div class="grid wide ">
+                <div class="spbc">SẢN PHẨM BÁN CHẠY</div>
+                <div class="row main-item">
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/1.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày sandal nam</span>
+                                <span>49.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/2.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày sandal nam</span>
+                                <span>49.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/3.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày sandal nam</span>
+                                <span>49.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/4.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày sandal nam</span>
+                                <span>49.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spbc">
+                    <span><a href="">Xem tất cả</a><hr></span>
+                </div>
+                <hr>
+                <!--sp cho nữ-->
+                <div class="spbc">SẢN PHẨM DANH CHO NỮ</div>
+                <div class="row main-item">
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/n1.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày Sandal Nữ MWC 2477</span>
+                                <span>235.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/n2.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Dép Nữ MWC 8450</span>
+                                <span>215.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/n3.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Giày Sandal Nữ MWC 2486</span>
+                                <span>235.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-6 item">
+                        <div class="product-img">
+                            <img src="./img/n4.jpg" alt="">
+                        </div>
+                        <div class="product-name">
+                            <div class="name-price">
+                                <span>Dép Nữ MWC 8462</span>
+                                <span>235.000 <sup>đ</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spbc">
+                    <span><a href="">Xem tất cả</a><hr></span>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="">
+                    <img src="./img/icon-2.png" alt="Phone Icon">
+                </a>
+            </div>
+        </div>
+        
+
+        <!--mobile-->
+        <label for="check-ip" class="icon-menu">
+            <i class='bx bx-menu'></i>
+        </label>
+        <input type="checkbox" id="check-ip"  class="check-ip">
+        <label for="check-ip" class="ovl"></label>
+        <div class="menu-mb">
+            <ul class="menu-mb-ul">
+                <li class="menu-mb-li">
+                    GIÁ ƯU ĐÃI <i class='bx bxs-chevron-down' id="showMenumb" onclick="showMenumb()"></i>
+                </li>
+                    <ul class="menu-mb-li-1" id="menu-mb-li-1">
+                        <li>79K</li>
+                        <li>99K - 199K</li>
+                        <li>149K - 149K</li>
+                    </ul>
+                <li class="menu-mb-li ">
+                    GIÀY NỮ
+                    <i class='bx bxs-chevron-down' onclick="showMenumb2()"></i>
+                </li>
+                    <ul class="menu-mb-li-2" id="menu-mb-li-2">
+                        <li>CAO GÓT</li>
+                        <li>THỂ THAO</li>
+                        <li>SANDAL NỮ</li>
+                    </ul>
+                <li class="menu-mb-li">
+                    GIÀY NAM
+                    <i class='bx bxs-chevron-down' onclick="showMenumb3()"></i>
+                </li>
+                    <ul class="menu-mb-li-3" id="menu-mb-li-3">
+                        <li>GIÀY THỂ THAO NAM</li>
+                        <li>SANDAL NAM</li>
+                        <li>DÉP NAM</li>
+                    </ul>
+                <li class="menu-mb-li">d</li>
+                <li class="menu-mb-li">e</li>
+                <li class="menu-mb-li">f</li>
+            </ul>
+        </div>
+        <!--mobile-->
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
